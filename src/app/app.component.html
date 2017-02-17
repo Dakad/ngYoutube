@@ -1,4 +1,18 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div id="wrapper">
+  <app-navbar></app-navbar>
+  <div id="page-wrapper" className="gray-bg">
+    <div className="row border-bottom">
+      <app-search mode="on-top"></app-search>
+    </div>
+    <div className="wrapper wrapper-content">
+      <h1>
+        {{title}}
+      </h1>
+      <nav>
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+        <a routerLink="/authorized" routerLinkActive="active">Authorized</a>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

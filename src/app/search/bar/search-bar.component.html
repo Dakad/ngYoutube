@@ -1,0 +1,14 @@
+<nav class="navbar navbar-static-top" id='navbar-search' role="navigation">
+  <div class="">
+    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" id='btn-minim-menu' routerLink="/search">
+      <i class="fa fa-bars"></i>
+    </a>
+    <form role="search" class="navbar-form-custom" id='form-search' onSubmit=search>
+      <div [ngClass]="{'form-control': true, 'has-error' : error}">
+        <input class="form-control" name='top-search' type='search' placeholder="Search for something..." value={{query}} onChange=search()
+        />
+        <span className='help-block'>{{error}}</span>
+      </div>
+    </form>
+  </div>
+</nav>

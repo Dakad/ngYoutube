@@ -1,0 +1,29 @@
+<nav className="menu-lateral navbar-default navbar-static-side" role="navigation">
+  <div className="sidebar-collapse">
+    <ul className="nav metismenu" id="side-menu">
+      <div *ngIf="isAuth">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+  				<img alt="Avatar" title='Avatar' class="img-circle avatar" src={{user.avatar}} />
+  			</span>
+            <a routerLink="/user/me" routerLinkActive="active" class="dropdown-toggle" title={{label}}>
+              <span class="clear"> 
+                <span class="block m-t-xs"> 
+                  <strong class="font-bold">{{user.name}}</strong>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="logo-element">
+            <img alt="Avatar" title='User avatar' className="img-circle avatar" src={{user.avatar}} />
+          </div>
+        </li>
+      </div>
+      <!--<app-nav-link [href]="" [label]="Home" [icon]="home text-navy fa-2x"> </app-nav-link>
+      <app-nav-link [href]="/signin" [label]='Signin' [icon]='unlock '> </app-nav-link>
+      <app-nav-link [href]='/trends' [label]='Trends' [icon]='globe '> </app-nav-link>
+      <app-nav-link *ngIf="authType === 'Google'" [href]='/subscriptions' [label]='Subscriptions' [icon]='clock-o  '> </app-nav-link>
+      <app-nav-link *ngIf="authType === 'Google'" [href]='/favorites' [label]='Liked' [icon]='thumbs-up '> </app-nav-link>-->
+    </ul>
+  </div>
+</nav>
