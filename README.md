@@ -1,4 +1,6 @@
-# NgYoutube
+# NgYoutubeNode
+
+My desktop application for a better usage of YouTube. Made with Electron and Youtube API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
 
